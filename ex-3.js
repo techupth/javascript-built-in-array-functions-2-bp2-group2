@@ -374,4 +374,16 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+function filterRenewMembers(bills) {
+  return bills.filter(renewMember => renewMember.member !== null);
+}
+
+function extractMemberNames(memberNames) {
+  return memberNames.map(memberName => memberName.member.name);
+}
+
+const renewMembers = filterRenewMembers(bills);
+const memberNames = extractMemberNames(renewMembers);
+
+// output
+console.log(memberNames);
