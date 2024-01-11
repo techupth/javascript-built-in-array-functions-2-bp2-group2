@@ -382,12 +382,5 @@ function calculateTotalPaidByLocation(bills) {
     return totalPaidByLocation;
   }, {});
 }
-
 const totalPaidByLocation = calculateTotalPaidByLocation(bills);
 console.log(totalPaidByLocation);
-// console.log(bills);
-
-// const totalPaidByLocation = bills.reduce((acc, bill) => {
-//   if (acc.find((location) => location === bill.location)) {
-//   }
-// }, {});
